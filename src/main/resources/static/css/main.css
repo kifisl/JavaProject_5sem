@@ -1,0 +1,270 @@
+html {
+
+}
+body{
+    background-image: url("/images/bg.png");
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.footer {
+    height: 5%;
+    min-height: 30px;
+    border-bottom: 1px white solid;
+    text-align: center;
+}
+
+.article {
+    position: absolute;
+    margin-left: 50%;
+    color: white;
+    font-size: 25px;
+}
+
+.admin-panel {
+    float: left;
+}
+
+.dws-submit {
+    width: 100px;
+    height: 85%;
+    margin: 3px;
+    float: right;
+    font-size: 15px;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+.dws-submit:hover {
+    transition: all 0.5s;
+    background: #fff;
+    color: #2c536c;
+}
+
+.items {
+    display: flex;
+    height: 95%;
+}
+
+.events-list {
+    min-width: 300px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px white solid;
+}
+
+.search-block {
+    height: 50px;
+    min-height: 30px;
+    text-align: center;
+    display: flex;
+    border-bottom: #319ebc 1px solid;
+
+}
+
+input[type="text"]{
+    font-size: 18px;
+    border-radius: 4px;
+    margin: 3px;
+    width: 180px;
+}
+
+.search-block input:hover{
+    box-shadow: 0 0 6px 3px rgba(58, 219, 253, 0.35);
+}
+
+.search {
+    height: 20px;
+}
+
+.events {
+    overflow-y: auto;
+}
+
+.event {
+    height: 60px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    overflow-y: auto;
+    word-wrap: break-word;
+    border-bottom: #319ebc 1px solid;
+}
+
+.event:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: rgba(0, 255, 255, 0.2);
+    border: 1px dotted;
+}
+
+.event-id {
+    flex: 1;
+}
+
+.event-name {
+    flex: 1;
+}
+
+.events-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.events-description__column{
+    flex: 1 1 70%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-evenly;
+    margin: 0 30px 0 30px;
+}
+.events-description__column:first-child{
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 20%;
+}
+
+.title {
+    margin: 0px 0 50px 0;
+    font-size: 25px;
+}
+
+.description {
+
+}
+
+.date {
+
+}
+
+.region {
+
+}
+
+.comments {
+    width: 100%;
+    height: 385px;
+    border: 1px white solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date-time{
+    flex: 0 0 10%;
+    margin-top: 30px;
+}
+
+.comments-column{
+    height: 90%;
+    display: flex;
+}
+
+.comments-column:first-child{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.comments-list{
+    padding: 20px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+.comment{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px white solid;
+}
+
+.comment:first-child {
+    border-top: 1px white solid;
+}
+
+.comment-login{
+    flex: 0 0 20%;
+    text-align: right;
+}
+
+.comment-photo{
+    flex: 0 0 20%;
+    text-align: left;
+}
+
+.comment-text{
+    flex: 0 0 60%;
+    text-align: center;
+}
+
+.delete-review-img {
+    padding-top: 10px;
+}
+
+.delete-review-img:hover {
+    cursor: pointer;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
+
+.display-none {
+    display: none;
+}
+
+.event-popup {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.event-popup-window {
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: white;
+}
+
+.list-athletes {
+    height: 150px;
+    border: black 1px solid;
+    overflow-y: auto;
+}

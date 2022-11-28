@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}">
+    <script th:src="@{/js/home.js}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-text">
+            Hello! Welcome to Sports Events. Here you can find events that take place in your area.<br/>
+            <img th:src="@{/images/sportEvents.png}" width="350px" height="350px"/><br/>
+            You can go to:
+            <div class="div-main">
+                <input class="dws-submit" type="button" name="main" onclick="location.assign('http://localhost:3000/main');" value="Main page">
+            </div>
+            or
+        </div>
+        <div class="auth-register">
+            <div class="div-auth">
+                <input class="dws-submit" type="button" name="auth" onclick="location.assign('http://localhost:3000/auth');" value="Authorization">
+            </div>
+            <div class="div-register">
+                <input class="dws-submit" type="button" name="register" onclick="location.assign('http://localhost:3000/register');" value="Registration">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

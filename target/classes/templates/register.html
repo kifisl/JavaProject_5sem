@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/register.css}">
+    <script th:src="@{/js/register.js}"></script>
+</head>
+<body>
+<div class="container">
+    <img src="https://dwstroy.ru/lessons/les3373/demo/img/men.png">
+    <form>
+        <div class="dws-input">
+            <h1 style="color: white">Registration</h1>
+        </div>
+        <div class="dws-input">
+            <input class="login-input" type="text" name="login" placeholder="Enter login">
+        </div>
+        <div class="dws-input">
+            <input class="password-input" type="password" name="password" maxlength="20" placeholder="Enter password">
+        </div>
+        <div class="dws-input">
+            <input class="email-input" type="email" name="email" placeholder="Enter email">
+        </div>
+        <input class="dws-submit" type="button" name="submit" onclick="register()" value="Register"><br />
+        <input class="dws-submit" type="button" name="back" onclick="location.assign('http://localhost:3000');" value="Back"><br />
+    </form>
+</div>
+</body>
+</html>

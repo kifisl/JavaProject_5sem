@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Authorization</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/auth.css}">
+    <script th:src="@{/js/auth.js}"></script>
+</head>
+<body>
+<div class="container">
+    <img src="https://dwstroy.ru/lessons/les3373/demo/img/men.png">
+    <form>
+        <div class="dws-input">
+            <h1 style="color: white">Authorization</h1>
+        </div>
+        <div class="dws-input">
+            <h1 style="color: red" th:utext="${message}"></h1>
+        </div>
+        <div class="dws-input">
+            <input class="login-input" type="text" name="login" placeholder="Enter login">
+        </div>
+        <div class="dws-input">
+            <input class="password-input" type="password" name="password" placeholder="Enter password">
+        </div>
+        <input class="dws-submit" type="button" name="submit" onclick="auth()" value="Log in"><br />
+        <input class="dws-submit" type="button" name="back" onclick="location.assign('http://localhost:3000');" value="Back"><br />
+    </form>
+</div>
+</body>
+</html>

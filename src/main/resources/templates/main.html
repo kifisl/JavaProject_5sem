@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+    <script th:src="@{/js/main.js}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="footer">
+            <div class="admin-panel">
+                <input class="dws-submit" type="button" name="create" onclick="crE()" value="Create event">
+                <input class="dws-submit" type="button" name="change" onclick="chE()" value="Change event">
+                <input class="dws-submit" type="button" name="delete" onclick="delE()" value="Delete event">
+            </div>
+            <div class="article">Sport events</div>
+            <input class="dws-submit" type="button" name="logout" onclick="logout()" value="Log out">
+        </div>
+        <div class="items">
+            <div class="events-list">
+                <div class="search-block">
+                    <form name="search">
+                        <input class="search-input" type="text" name="search" placeholder="Search">
+                    </form>
+                    <div>
+                        <input class="dws-submit search" type="button" name="search" onclick="searchFunction()" value="Search">
+                        <input class="dws-submit search" type="button" name="refresh" onclick="refreshFunction()" value="Refresh">
+                    </div>
+                </div>
+                <div class="events"></div>
+            </div>
+            <div class="events-description visibility-hidden">
+                <div class="events-description__column">
+                    <div class="title"></div>
+                    <div class="description"></div>
+                </div>
+                <div class="events-description__column date-time">
+                    <div class="date"></div>
+                    <div class="region"></div>
+                </div>
+                <div class="events-description__column">
+                    <div class="comments">
+                        <div class="comments-column">
+                            <form name="com">
+                                <input class="comment-input comment-field" type="text" name="description" maxlength="200" placeholder="Comment">
+                                <input id="file_attach" class="input-file" type="file" name="file" value="Add photo">
+                            </form>
+                            <input class="dws-submit" type="button" name="add-comment" onclick="addComment()" value="Add comment">
+                        </div>
+                        <div class="comments-column comments-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="event-popup display-none">
+        <div class="event-popup-window">
+            <label>Create event</label><br/>
+            <input class="input-add-article" type="text" maxlength='50' placeholder="Article" /><br/>
+            <input class="input-add-description" type="text" maxlength='200' placeholder="Description" /><br/>
+            <input class="input-add-date" type="date" maxlength='20' placeholder="Date" /><br/>
+            <input class="input-add-region" type="text" maxlength='30' placeholder="Region" /><br/><br/>
+            <label>Athletes(choose):</label><br/>
+            <div class="list-athletes"></div>
+            <input class="" type="button" name="add-comment" onclick="addE()" value="Add">
+            <input class="" type="button" name="add-comment" onclick="backCE()" value="Back">
+        </div>
+    </div>
+
+    <div class="event-popup display-none">
+        <div class="event-popup-window">
+            <label>Change event</label><br/>
+            <input class="input-add-article" type="text" maxlength='50' placeholder="Article" /><br/>
+            <input class="input-add-description" type="text" maxlength='200' placeholder="Description" /><br/>
+            <input class="input-add-date" type="date" maxlength='20' placeholder="Date" /><br/>
+            <input class="input-add-region" type="text" maxlength='30' placeholder="Region" /><br/><br/>
+            <label>Athletes(choose):</label><br/>
+            <div class="list-athletes"></div>
+            <input class="" type="button" name="add-comment" onclick="changeE()" value="Change">
+            <input class="" type="button" name="add-comment" onclick="backChE()" value="Back">
+        </div>
+    </div>
+</body>
+</html>

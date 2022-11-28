@@ -1,0 +1,44 @@
+body{
+    background-image: url("/images/bg.png");
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-text {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 600px;
+}
+
+.auth-register {
+    display: flex;
+}
+
+.div-auth {
+    padding-right: 10px !important;
+}
+
+.div-register {
+    padding-left: 10px !important;
+}
+
+.dws-submit {
+    padding: 13px 30px;
+    margin: 5px 0 20px 0;
+    font-size: 15px;
+    color: #fff;
+    background-color: #2ca8c6;
+    border: none;
+    border-bottom: 4px solid #6ee9fd;
+    cursor: pointer;
+}
+.dws-submit:hover{
+    transition: all 0.5s;
+    background: #fff;
+    color: #2c536c;
+}
