@@ -1,0 +1,52 @@
+    <nav th:fragment="header" class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm navbar-div">
+        <div class="navbar-brand">
+            TableGames
+        </div>
+
+        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+      <span class="navbar-toggler-icon">
+      </span>
+        </button>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse ul-container-div">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a onclick="goOnIndex()" class="nav-link waves-effect waves-light"><span class="ul-li-navbar">Home Page</span></a></li>
+                <li class="nav-item"><a onclick="goOnProjects()" class="nav-link waves-effect waves-light"><span class="ul-li-navbar">Games</span></a></li>
+                <li class="nav-item" id="hidden"><a onclick="goOnUserProjects()" class="nav-link waves-effect waves-light"><span class="ul-li-navbar">Games I play</span></a></li>
+                <!--<li class="nav-item"><a onclick="logOut()" class="nav-link waves-effect waves-light"><span class="ul-li-navbar">Logout</span></a></li>-->
+            </ul>
+
+            <ul class="navbar-nav me-auto nav-flex-icons">
+                <li class="nav-item" style="margin-left: 280px; padding-left: 0px !important; padding-right: 0px !important;">
+                    <a class="nav-link waves-effect waves-light" th:href="@{/login}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="nav-item" style="margin-top: 5px; margin-left: 50px; padding-left: 0px !important; padding-right: 0px !important;">
+                    <a class="nav-link waves-effect waves-light" th:href="@{/registration}">
+                        <i class="fas fa-user-plus" style='font-size:26px;color:whitesmoke'></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            function  goOnIndex()
+            {
+                document.location.href = '/';
+            }
+
+            function goOnProjects()
+            {
+                document.location.href = '/projects';
+            }
+
+            function goOnUserProjects()
+            {
+                document.location.href = '/userprojects';
+            }
+        </script>
+    </nav>

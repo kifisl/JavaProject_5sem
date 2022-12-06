@@ -1,0 +1,119 @@
+.div-linear-gradient {
+    height: 100%;
+    width: 100%;
+    background: #76F0EC;
+    font-size: 15px;
+}
+
+td{
+    font-size: 15px;
+}
+th{
+    font-size: 18px;
+}
+
+
+.navbar-brand {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 50px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.ul-li-navbar {
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color:yellow;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.navbar-nav > li {
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.ul-container-div {
+    margin-left: 240px;
+}
+
+.navbar-div {
+    height: 80px;
+}
+
+.div-main-container {
+    margin:10px;
+    min-height:100%;
+}
+
+.div-slider-container {
+    position:absolute;
+    height: 40%;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: 30%;
+    z-index: 2;
+}
+
+.div-auth-reg-buttons-container {
+    position:absolute;
+    height: 600px;
+    width: 800px;
+    margin-top: 200px;
+    margin-left: 300px;
+    background-color: #7B41B5;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.carousel-main-container {
+    height: 100% !important;
+    width: 100% !important;
+    margin: 30px !important;
+}
+
+.div-introduction-header-container {
+    margin: 20px;
+    height:150px;
+    width:600px;
+}
+
+.div-introduction-header {
+    width: 400px;
+    height: 150px;
+    text-align: left;
+    font-size: 30px;
+    font-family: Bedas;
+    font-weight: 400;
+    color: white;
+    margin-left: 200px;
+    margin-top:0px;
+    font-weight: bold;
+}
+
+.div-site-description-text-container {
+    width: 400px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.div-site-description-text-left {
+    width: 400px;
+    height: 180px;
+    text-align: left;
+    font-size: 17px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 50px;
+}
+
+.div-site-description-text-right {
+    width: 400px;
+    height: 200px;
+    text-align: right;
+    font-size: 17px;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 130px;
+}
