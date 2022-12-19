@@ -1,0 +1,32 @@
+.product:hover {
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.product-link {
+    color: #833cad !important;
+    text-decoration: none
+}
+
+.container-fluid
+{
+    background-color: #65854e;
+}
+
+.color{
+    background-color: #8eae76;
+}
+
+.link{
+    color: #e7eee2; /* Цвет ссылок */
+}
+.link:visited {
+    color: #d2dfc9; /* Цвет посещенных ссылок */
+}
+.link:hover {
+    color: white;
+}
+
+.text{
+    color: #e7eee2;
+}
